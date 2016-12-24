@@ -7,19 +7,42 @@
 //
 
 import UIKit
+import ReSwift
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,StoreSubscriber {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var lastValueLabel: UILabel!
+    
+    @IBOutlet weak var useSerialSwitch: UISwitch!
+    @IBAction func launchTapped(_ sender: Any) {
+        for _ in 0...100{
+            DispatchQueue.global().async{
+                doExpensiveThingsThenDispatchResult()
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func switchChanged(_ serialSwitch: UISwitch) {
+        useSerial = serialSwitch.isOn
     }
-
-
+        
+    override func viewWillAppear(_ animated: Bool) {
+        reSwiftQueue().async{
+            store.subscribe(self)
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        reSwiftQueue().async{
+            store.unsubscribe(self)
+        }
+    }
+    
+    func newState(state: LBGDState) {
+        guard let lastValueLabel = lastValueLabel else{
+            return
+        }
+        lastValueLabel.text = "\(store.state.lastNumber)"
+    }
 }
 

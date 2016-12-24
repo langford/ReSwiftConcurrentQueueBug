@@ -1,0 +1,22 @@
+PODS:
+  - ReSwift (2.1.0)
+
+DEPENDENCIES:
+  - ReSwift (from `https://github.com/ReSwift/ReSwift.git`, commit `a560b66dae96a167e2b79c9c11aa0a3ad93c2df6`)
+
+EXTERNAL SOURCES:
+  ReSwift:
+    :commit: a560b66dae96a167e2b79c9c11aa0a3ad93c2df6
+    :git: https://github.com/ReSwift/ReSwift.git
+
+CHECKOUT OPTIONS:
+  ReSwift:
+    :commit: a560b66dae96a167e2b79c9c11aa0a3ad93c2df6
+    :git: https://github.com/ReSwift/ReSwift.git
+
+SPEC CHECKSUMS:
+  ReSwift: c13b76cb963c5ab2a137c9c6e74823cef4b81588
+
+PODFILE CHECKSUM: a467734e3ee9a7c5dc097c0f29ceb252bb628d95
+
+COCOAPODS: 1.1.1

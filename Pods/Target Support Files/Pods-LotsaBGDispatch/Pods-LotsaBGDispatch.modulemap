@@ -1,0 +1,6 @@
+framework module Pods_LotsaBGDispatch {
+  umbrella header "Pods-LotsaBGDispatch-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		892D15691E0DFCF8003D13FC /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D15681E0DFCF8003D13FC /* State.swift */; };
 		89AA3BD71E0DFB4B00D0AA38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AA3BD61E0DFB4B00D0AA38 /* AppDelegate.swift */; };
 		89AA3BD91E0DFB4B00D0AA38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AA3BD81E0DFB4B00D0AA38 /* ViewController.swift */; };
 		89AA3BDC1E0DFB4B00D0AA38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AA3BDA1E0DFB4B00D0AA38 /* Main.storyboard */; };
 		89AA3BDE1E0DFB4B00D0AA38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AA3BDD1E0DFB4B00D0AA38 /* Assets.xcassets */; };
 		89AA3BE11E0DFB4B00D0AA38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AA3BDF1E0DFB4B00D0AA38 /* LaunchScreen.storyboard */; };
+		C1AAADEB30AF58540A64376E /* Pods_LotsaBGDispatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 736F2A51A278A71D3F7C98F8 /* Pods_LotsaBGDispatch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37810EE34869E1E94E5C6C5B /* Pods-LotsaBGDispatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LotsaBGDispatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-LotsaBGDispatch/Pods-LotsaBGDispatch.release.xcconfig"; sourceTree = "<group>"; };
+		736F2A51A278A71D3F7C98F8 /* Pods_LotsaBGDispatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LotsaBGDispatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		892D15681E0DFCF8003D13FC /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		89AA3BD31E0DFB4B00D0AA38 /* LotsaBGDispatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotsaBGDispatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AA3BD61E0DFB4B00D0AA38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89AA3BD81E0DFB4B00D0AA38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		89AA3BDD1E0DFB4B00D0AA38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89AA3BE01E0DFB4B00D0AA38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89AA3BE21E0DFB4B00D0AA38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2B8FC076329E11C09A7C18B /* Pods-LotsaBGDispatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LotsaBGDispatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LotsaBGDispatch/Pods-LotsaBGDispatch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1AAADEB30AF58540A64376E /* Pods_LotsaBGDispatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D68A808F6E4A4B04075A47B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				736F2A51A278A71D3F7C98F8 /* Pods_LotsaBGDispatch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		89AA3BCA1E0DFB4B00D0AA38 = {
 			isa = PBXGroup;
 			children = (
 				89AA3BD51E0DFB4B00D0AA38 /* LotsaBGDispatch */,
 				89AA3BD41E0DFB4B00D0AA38 /* Products */,
+				9038E05E83EBB4164E3ACF04 /* Pods */,
+				4D68A808F6E4A4B04075A47B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +74,21 @@
 				89AA3BD61E0DFB4B00D0AA38 /* AppDelegate.swift */,
 				89AA3BD81E0DFB4B00D0AA38 /* ViewController.swift */,
 				89AA3BDA1E0DFB4B00D0AA38 /* Main.storyboard */,
+				892D15681E0DFCF8003D13FC /* State.swift */,
 				89AA3BDD1E0DFB4B00D0AA38 /* Assets.xcassets */,
 				89AA3BDF1E0DFB4B00D0AA38 /* LaunchScreen.storyboard */,
 				89AA3BE21E0DFB4B00D0AA38 /* Info.plist */,
 			);
 			path = LotsaBGDispatch;
+			sourceTree = "<group>";
+		};
+		9038E05E83EBB4164E3ACF04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2B8FC076329E11C09A7C18B /* Pods-LotsaBGDispatch.debug.xcconfig */,
+				37810EE34869E1E94E5C6C5B /* Pods-LotsaBGDispatch.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89AA3BE51E0DFB4B00D0AA38 /* Build configuration list for PBXNativeTarget "LotsaBGDispatch" */;
 			buildPhases = (
+				A863992ABB06CE95D46169CD /* [CP] Check Pods Manifest.lock */,
 				89AA3BCF1E0DFB4B00D0AA38 /* Sources */,
 				89AA3BD01E0DFB4B00D0AA38 /* Frameworks */,
 				89AA3BD11E0DFB4B00D0AA38 /* Resources */,
+				E3ABD0C373FA258F51E6D114 /* [CP] Embed Pods Frameworks */,
+				4C91A6E234A937D62E356616 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +161,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C91A6E234A937D62E356616 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LotsaBGDispatch/Pods-LotsaBGDispatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A863992ABB06CE95D46169CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3ABD0C373FA258F51E6D114 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LotsaBGDispatch/Pods-LotsaBGDispatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		89AA3BCF1E0DFB4B00D0AA38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +216,7 @@
 			files = (
 				89AA3BD91E0DFB4B00D0AA38 /* ViewController.swift in Sources */,
 				89AA3BD71E0DFB4B00D0AA38 /* AppDelegate.swift in Sources */,
+				892D15691E0DFCF8003D13FC /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +337,10 @@
 		};
 		89AA3BE61E0DFB4B00D0AA38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2B8FC076329E11C09A7C18B /* Pods-LotsaBGDispatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LotsaBGDispatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rowdylabs.LotsaBGDispatch;
@@ -270,8 +351,10 @@
 		};
 		89AA3BE71E0DFB4B00D0AA38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37810EE34869E1E94E5C6C5B /* Pods-LotsaBGDispatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LotsaBGDispatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rowdylabs.LotsaBGDispatch;
@@ -299,6 +382,7 @@
 				89AA3BE71E0DFB4B00D0AA38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
